@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joel Tikoo</title>
+  <meta name="description" content="my portfolio page" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <svg class="icon-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-monitor" viewBox="0 0 24 24">
+      <rect x="3" y="4" width="18" height="13" rx="2"></rect>
+      <path d="M9 20h6M12 17v3"></path>
+    </symbol>
+    <symbol id="icon-folder" viewBox="0 0 24 24">
+      <path d="M3 7h6l2 2h10v8a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3z"></path>
+    </symbol>
+    <symbol id="icon-grid" viewBox="0 0 24 24">
+      <rect x="4" y="4" width="7" height="7" rx="1"></rect>
+      <rect x="13" y="4" width="7" height="7" rx="1"></rect>
+      <rect x="4" y="13" width="7" height="7" rx="1"></rect>
+      <rect x="13" y="13" width="7" height="7" rx="1"></rect>
+    </symbol>
+    <symbol id="icon-tools" viewBox="0 0 24 24">
+      <path d="M14 5a4 4 0 0 0 5 5L12 17l-5 2 2-5 7-7z"></path>
+      <path d="M5 5l4 4"></path>
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+      <path d="m4 7 8 6 8-6"></path>
+    </symbol>
+    <symbol id="icon-start" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="8" height="8"></rect>
+      <rect x="13" y="3" width="8" height="8"></rect>
+      <rect x="3" y="13" width="8" height="8"></rect>
+      <rect x="13" y="13" width="8" height="8"></rect>
+    </symbol>
+    <symbol id="icon-min" viewBox="0 0 24 24">
+      <path d="M5 12h14"></path>
+    </symbol>
+    <symbol id="icon-max" viewBox="0 0 24 24">
+      <rect x="6" y="6" width="12" height="12"></rect>
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24">
+      <path d="m6 6 12 12M18 6 6 18"></path>
+    </symbol>
+    <symbol id="icon-tiles" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="10" height="8" rx="1"></rect>
+      <rect x="3" y="13" width="10" height="8" rx="1"></rect>
+      <rect x="15" y="3" width="6" height="18" rx="1"></rect>
+    </symbol>
+  </svg>
+
+  <div class="wallpaper-glow"></div>
+
+  <main class="desktop" id="desktop">
+    <img class="wallpaper-cat" src="assets/pusheen-cat.png" alt="pusheen cat wallpaper" loading="eager"
+      decoding="async" />
+
+    <aside class="desktop-icons" aria-label="Desktop app icons">
+      <button class="desktop-icon" data-open="hero" aria-label="Open intro">
+        <span class="icon-glyph"><svg class="app-icon">
+            <use href="#icon-monitor"></use>
+          </svg></span>
+        <span>Intro</span>
+      </button>
+      <button class="desktop-icon" data-open="about" aria-label="Open about">
+        <span class="icon-glyph"><svg class="app-icon">
+            <use href="#icon-folder"></use>
+          </svg></span>
+        <span>About</span>
+      </button>
+      <button class="desktop-icon" data-open="projects" aria-label="Open projects">
+        <span class="icon-glyph"><svg class="app-icon">
+            <use href="#icon-grid"></use>
+          </svg></span>
+        <span>Projects</span>
+      </button>
+      <button class="desktop-icon" data-open="skills" aria-label="Open skills">
+        <span class="icon-glyph"><svg class="app-icon">
+            <use href="#icon-tools"></use>
+          </svg></span>
+        <span>Skills</span>
+      </button>
+      <button class="desktop-icon" data-open="contact" aria-label="Open contact">
+        <span class="icon-glyph"><svg class="app-icon">
+            <use href="#icon-mail"></use>
+          </svg></span>
+        <span>Contact</span>
+      </button>
+    </aside>
+
+    <div class="window-layer" id="windowLayer">
+      <section class="window app-window active" id="hero" data-app="hero">
+        <div class="window-titlebar">
+          <div class="window-resize-handle window-resize-se"></div>
+          <p>This PC — Intro</p>
+          <div class="window-controls">
+            <button class="control win-btn" data-action="minimize" aria-label="Minimize window"><svg
+                class="control-icon">
+                <use href="#icon-min"></use>
+              </svg></button>
+            <button class="control win-btn" data-action="maximize" aria-label="Focus window"><svg class="control-icon">
+                <use href="#icon-max"></use>
+              </svg></button>
+            <button class="control win-btn close-btn" data-action="close" aria-label="Close window"><svg
+                class="control-icon">
+                <use href="#icon-close"></use>
+              </svg></button>
+          </div>
+        </div>
+        <div class="window-content hero-content">
+          <p class="badge">DEVELOPER PORTFOLIO OS</p>
+          <h1>
+            Engineering student learning to
+            <span>code</span>
+          </h1>
+          <p class="hero-text">
+            I’m Joel, an electronics engineering student,
+            building websites & web applications
+            and learning data science & machine learning,
+            interested in cybersecurity & game dev as well. <br> <!--
+            I enjoy learning by building and experimenting with different technologies, starting with small web projects
+            using various frontend and backend tools. <br>
+            I’m currently exploring data science and machine learning, focusing on the programming, statistics, and
+            tools used to analyze data and build predictive systems. <br>
+            I’m also interested in cybersecurity and game development for their mix of problem-solving, system design,
+            and creative programming.<br><br> -->
+            At the moment, my goal is simple: keep learning, keep building projects, and explore different fields within
+            technology to develop a strong and versatile skill set.
+          </p>
+          <div class="hero-cta">
+            <button class="btn primary launcher" data-open="projects">Open Projects</button>
+            <button class="btn ghost launcher" data-open="contact">Get in touch</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="window app-window hidden" id="about" data-app="about">
+        <div class="window-titlebar">
+          <div class="window-resize-handle window-resize-se"></div>
+          <p>File Explorer — About</p>
+          <div class="window-controls">
+            <button class="control win-btn" data-action="minimize" aria-label="Minimize window"><svg
+                class="control-icon">
+                <use href="#icon-min"></use>
+              </svg></button>
+            <button class="control win-btn" data-action="maximize" aria-label="Focus window"><svg class="control-icon">
+                <use href="#icon-max"></use>
+              </svg></button>
+            <button class="control win-btn close-btn" data-action="close" aria-label="Close window"><svg
+                class="control-icon">
+                <use href="#icon-close"></use>
+              </svg></button>
+          </div>
+        </div>
+        <div class="window-content split">
+          <div>
+            <h2>About Me</h2>
+            <p>
+              I’m Joel, an electronics engineering student,
+              building websites & web applications
+              and learning data science & machine learning,
+              interested in cybersecurity & game dev as well.
+            </p>
+            <p>
+              I enjoy learning by building and experimenting with different technologies, starting with small web
+              projects
+              using various frontend and backend tools.
+            </p>
+            <p>
+              I’m currently exploring data science and machine learning, focusing on the programming, statistics, and
+              tools used to analyze data and build predictive systems.
+            </p>
+            <p>
+              I’m also interested in cybersecurity and game development for their mix of problem-solving, system design,
+              and creative programming.
+            </p>
+          </div>
+          <ul class="meta-list">
+            <li><span>Experience</span><strong>None yet</strong></li>
+            <li><span>Timezone</span><strong>UTC +5:30</strong></li>
+            <li><span>Location</span><strong>Pune, India <br><i>Open to Remote/Hybrid <br>& Relocation</i></strong></li>
+            <li><span>Focus</span><strong>Data, Infrastructure, Research</strong></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="window app-window hidden" id="projects" data-app="projects">
+        <div class="window-titlebar">
+          <div class="window-resize-handle window-resize-se"></div>
+          <p>Projects Explorer</p>
+          <div class="window-controls">
+            <button class="control win-btn" data-action="minimize" aria-label="Minimize window"><svg
+                class="control-icon">
+                <use href="#icon-min"></use>
+              </svg></button>
+            <button class="control win-btn" data-action="maximize" aria-label="Focus window"><svg class="control-icon">
+                <use href="#icon-max"></use>
+              </svg></button>
+            <button class="control win-btn close-btn" data-action="close" aria-label="Close window"><svg
+                class="control-icon">
+                <use href="#icon-close"></use>
+              </svg></button>
+          </div>
+        </div>
+        <div class="window-content">
+          <h2>Selected Projects</h2>
+          <div class="project-grid">
+            <a class="project-link" href="https://github.com/joeltikoo/github-trends-analyzer" target="_blank"
+              rel="noreferrer">
+              <article class="project-card">
+                <h3>GITHUB DATA ANALYSIS</h3>
+                <p>Built a Python-based GitHub repository analyzer to explore repo metrics, language popularity, and
+                  project growth trends.</p>
+                <div class="tags"><span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Jupyter
+                    Notebook</span></div>
+              </article>
+            </a>
+            <a class="project-link" href="https://github.com/joeltikoo/habitarium" target="_blank" rel="noreferrer">
+              <article class="project-card">
+                <h3>HABITARIUM</h3>
+                <p>Developed a gamified habit tracker web application using Flask with habit tracking, streak
+                  visualization, and a leveling system.</p>
+                <div class="tags">
+                  <span>Python</span><span>Flask</span><span>HTML</span><span>CSS</span><span>JS</span><span>SQLite</span>
+                </div>
+              </article>
+            </a>
+            <a class="project-link" href="https://github.com/joeltikoo/news-oversimplifier-cli-tool" target="_blank"
+              rel="noreferrer">
+              <article class="project-card">
+                <h3>NEWS OVERSIMPLIFIER CLI TOOL</h3>
+                <p>Created a Python command-line news summarizer using NewsAPI, implementing text preprocessing and
+                  automated article summaries.</p>
+                <div class="tags"><span>Python</span></div>
+              </article>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="window app-window hidden" id="skills" data-app="skills">
+        <div class="window-titlebar">
+          <div class="window-resize-handle window-resize-se"></div>
+          <p>Skills - Toolbox</p>
+          <div class="window-controls">
+            <button class="control win-btn" data-action="minimize" aria-label="Minimize window"><svg
+                class="control-icon">
+                <use href="#icon-min"></use>
+              </svg></button>
+            <button class="control win-btn" data-action="maximize" aria-label="Focus window"><svg class="control-icon">
+                <use href="#icon-max"></use>
+              </svg></button>
+            <button class="control win-btn close-btn" data-action="close" aria-label="Close window"><svg
+                class="control-icon">
+                <use href="#icon-close"></use>
+              </svg></button>
+          </div>
+        </div>
+        <div class="window-content">
+          <h2>Skills</h2>
+
+          <h3>Languages</h3>
+          <div class="skills-wrap">
+            <span>Python</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span>
+            <span>C</span><span>R</span><span>SQL</span><span>Jupyter Notebook</span>
+          </div>
+
+          <h3>Frameworks &amp; Libraries</h3>
+          <div class="skills-wrap">
+            <span>Flask</span><span>Django</span><span>React.js</span><span>pandas</span><span>numpy</span><span>matplotlib</span>
+          </div>
+
+          <h3>Developer Tools</h3>
+          <div class="skills-wrap">
+            <span>Git</span><span>GitHub</span><span>Visual Studio Code</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="window app-window hidden" id="contact" data-app="contact">
+        <div class="window-titlebar">
+          <div class="window-resize-handle window-resize-se"></div>
+          <p>Mail — Contact</p>
+          <div class="window-controls">
+            <button class="control win-btn" data-action="minimize" aria-label="Minimize window"><svg
+                class="control-icon">
+                <use href="#icon-min"></use>
+              </svg></button>
+            <button class="control win-btn" data-action="maximize" aria-label="Focus window"><svg class="control-icon">
+                <use href="#icon-max"></use>
+              </svg></button>
+            <button class="control win-btn close-btn" data-action="close" aria-label="Close window"><svg
+                class="control-icon">
+                <use href="#icon-close"></use>
+              </svg></button>
+          </div>
+        </div>
+        <div class="window-content">
+          <h2>Get in touch with me</h2>
+          <p class="contact-copy">Feel free to ask questions, offer advice, or just say hello!</p>
+          <div class="contact-actions">
+            <a href="mailto:joeltbuilds@gmail.com" class="btn primary">joeltbuilds@gmail.com</a>
+            <a href="https://github.com/joeltikoo" target="_blank" rel="noreferrer" class="btn ghost">GitHub</a>
+            <a href="https://linkedin.com/in/joeltikoo" target="_blank" rel="noreferrer" class="btn ghost">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <aside class="start-menu hidden" id="startMenu" aria-label="Start menu">
+    <p class="start-title">Joel.t</p>
+    <button class="start-item" data-open="hero"><svg class="mini-icon">
+        <use href="#icon-monitor"></use>
+      </svg>Intro</button>
+    <button class="start-item" data-open="about"><svg class="mini-icon">
+        <use href="#icon-folder"></use>
+      </svg>About</button>
+    <button class="start-item" data-open="projects"><svg class="mini-icon">
+        <use href="#icon-grid"></use>
+      </svg>Projects</button>
+    <button class="start-item" data-open="skills"><svg class="mini-icon">
+        <use href="#icon-tools"></use>
+      </svg>Skills</button>
+    <button class="start-item" data-open="contact"><svg class="mini-icon">
+        <use href="#icon-mail"></use>
+      </svg>Contact</button>
+  </aside>
+
+  <footer class="taskbar" aria-label="Desktop taskbar">
+    <div class="taskbar-left">
+      <button class="start-button" id="startButton" aria-label="Open start menu"><svg class="mini-icon">
+          <use href="#icon-start"></use>
+        </svg>Start</button>
+      <button class="tile-toggle" id="tileToggle" aria-label="Toggle tiling mode"><svg class="mini-icon">
+          <use href="#icon-tiles"></use>
+        </svg>Tiling Off</button>
+      <button class="taskbar-app" data-open="hero"><svg class="mini-icon">
+          <use href="#icon-monitor"></use>
+        </svg>Intro</button>
+      <button class="taskbar-app" data-open="about"><svg class="mini-icon">
+          <use href="#icon-folder"></use>
+        </svg>About</button>
+      <button class="taskbar-app" data-open="projects"><svg class="mini-icon">
+          <use href="#icon-grid"></use>
+        </svg>Projects</button>
+      <button class="taskbar-app" data-open="skills"><svg class="mini-icon">
+          <use href="#icon-tools"></use>
+        </svg>Skills</button>
+      <button class="taskbar-app" data-open="contact"><svg class="mini-icon">
+          <use href="#icon-mail"></use>
+        </svg>Contact</button>
+    </div>
+    <div class="taskbar-right">
+      <span id="menuDate">--/--/----</span>
+      <span id="menuTime">--:--</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
