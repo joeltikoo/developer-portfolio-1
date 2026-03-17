@@ -94,7 +94,8 @@ You can personalize the site by editing the following:
 - Add keyboard shortcuts for window actions
 - Add more project metadata such as live demos and tech details
 - Improve window resizing to support all edges cleanly
-- Add theme presets or wallpapers
+- Add theme presets or custom wallpapers
+(Feel free to suggest more!)
 
 ## License
 
