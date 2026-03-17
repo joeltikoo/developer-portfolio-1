@@ -95,6 +95,7 @@ You can personalize the site by editing the following:
 - Add more project metadata such as live demos and tech details
 - Improve window resizing to support all edges cleanly
 - Add theme presets or custom wallpapers
+  
 (Feel free to suggest more!)
 
 ## License
