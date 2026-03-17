@@ -4,6 +4,8 @@ An interactive personal portfolio built as a desktop-style operating system inte
 
 The site presents portfolio content inside movable app windows such as Intro, About, Projects, Skills, and Contact. On desktop screens it behaves like a lightweight window manager, while on smaller screens it adapts into a more mobile-friendly experience.
 
+Live Demo: ![https://joelt.vercel.app](https://joelt.vercel.app)
+
 ## Features
 
 - Desktop-inspired portfolio UI with custom SVG icons
