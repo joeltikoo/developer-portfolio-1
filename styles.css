@@ -534,7 +534,7 @@ h2 {
   height: 36px;
   border: 2px solid var(--border);
   border-radius: 8px;
-  background-color: #f97316
+  background: #fff8ee;
 ;
   color: var(--ink);
   font-weight: 700;
