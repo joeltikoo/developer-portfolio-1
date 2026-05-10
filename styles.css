@@ -480,7 +480,7 @@ h2 {
   font-weight: 800;
   border: 2px solid var(--border);
   border-radius: 8px;
-  background-color: #ffa523;
+  background-color: #2596be;
   color: white;
 }
 
@@ -533,7 +533,7 @@ h2 {
   height: 36px;
   border: 2px solid var(--border);
   border-radius: 8px;
-  background: #fff9ef;
+  background-color: #2596be;
   color: var(--ink);
   font-weight: 700;
   cursor: pointer;
