@@ -481,6 +481,7 @@ h2 {
   border: 2px solid var(--border);
   border-radius: 8px;
   background: linear-gradient(180deg, #ffbb70 0%, var(--orange) 100%);
+  color: white;
 }
 
 .start-item {
